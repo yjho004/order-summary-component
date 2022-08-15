@@ -1,0 +1,58 @@
+/*styling your markup language like HTML elements like <h1> to make them look good*/
+/* {} this is a selector open and close*/
+/* to have 2 h1 but of different styles you need to specify class <h1 class="">*/
+/* in css you can think of every element as a box, whether is footer or menu bar, everything is a box*/
+/*every box consists of 4 parts, content (text and images), padding (space inside of element), border (outline that goes around your content), margin (space outside element) */
+
+/*to declare global css variables, so any style you type later it will auto-prompt for you, rmb to put semi-colon and doubledash*/
+
+
+
+:root { 
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+/*this will select all elements on the page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*more intuitive, border box tells the browser for when determining the height or the width of this div simply account for padding*/
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover; /*covers the entire page*/
+    background-color: var(--pale-blue);
+}
+
+.card {
+    width: 450px; /*this is to specify your div width*/
+    background-color: white; /*specify background color*/
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%; /*inherit the width of its parent div*/
+}
+
+.container {
+    padding: 30px;
+}
+
+.order-description {
+    line-height: 24px;
+}
