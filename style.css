@@ -6,12 +6,11 @@
 
 /*to declare global css variables, so any style you type later it will auto-prompt for you, rmb to put semi-colon and doubledash*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root { 
 --pale-blue: hsl(225, 100%, 94%);
 --bright-blue: hsl(245, 75%, 52%);
-
 --very-pale-blue: hsl(225, 100%, 98%);
 --desaturated-blue: hsl(224, 23%, 55%);
 --dark-blue: hsl(223, 47%, 23%);
@@ -36,6 +35,10 @@ body {
     background-color: white; /*specify background color*/
     color: var(--desaturated-blue);
     border-radius: 20px;
+    overflow: hidden;
+    font-family: "red hat display", sans-serif;
+    line-height: 24px;
+    margin: 50px auto;
 }
 
 .title {
@@ -43,6 +46,7 @@ body {
     font-weight: 900;
     font-size: 32px;
     text-align: center;
+    margin-top: 12px;
 }
 
 .hero-img {
@@ -51,8 +55,64 @@ body {
 
 .container {
     padding: 30px;
+    text-align: center;
+}
+
+.plan-container {
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 24px;
+    text-decoration: none;
+}
+
+.plan-description{
+    margin-right: 75px;
+    line-height: 20px;
+}
+
+.plan-container a:hover {
+    color: var(--bright-blue);
+    text-decoration: none;
+}
+
+
+button {
+    width: 100%;
+    border: none;
+    font-family: "red hat display", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.payment {
+    margin: 12px auto;
+    padding: 1rem 0;
+    background-color: var(--bright-blue);
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    padding: 10px 30px;
+    color: white;
+}
+
+.cancel {
+    margin-top: 22px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: var(--desaturated-blue);
 }
 
 .order-description {
     line-height: 24px;
+    text-align: center;
+    margin-top: 24px;
 }
